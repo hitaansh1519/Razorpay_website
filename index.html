@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./images/favicon.png">
+    <script src="https://unpkg.com.feather-icons"></script>
     <title>Razorpay</title>
 </head>
 
@@ -115,7 +116,7 @@
         <!--Feature Section-->
         <section class="relative mt-[190px] overflow-hidden">
             <img src="./images/feature-section1-dottedrows.png" alt="" loading="lazy" width="233" height="167"
-                class="absolute -top[8rem] left-[10rem] inline-block -z-10">
+                class="absolute -top-[8rem] left-[10rem] inline-block -z-10">
             <img src="./images/feature-section1-dottedrows.png" alt="" loading="lazy" width="233" height="167"
                 class="absolute top-[3rem] right-0 inline-block rotate-180">
             <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
@@ -125,52 +126,65 @@
                 <div class="bg-greenLight w-6 h-1 mx-auto mt-4 mb-6"></div>
 
                 <!--Content Box-->
-                <div class="w-full min-h-[520px] bg-white flex rounded-md relative p-10 py-12 border-1">
+                <div class="w-full min-h-[520px] bg-white flex rounded-md relative p-10 py-12 border">
                     <!--Left Section-->
-                    <div>
-                        <h3>
+                    <div class="flex flex-col justify-between w-full">
+                        <h3 class="font-mullish text-[29px] leading-10 font-bold max-w[500px]">
                             Supercharge your business with the all-powerfull
                             <span class="text-lightBlue">Payment Gateway</span>
                         </h3>
 
-                        <ul>
-                            <li>
+                        <ul class="space-y-2">
+                            <li class="font-mullish flex items-center space-x-2">
+                                <i data-feather="check" class="text-greenLight"></i>
                                 <span>100+ Payment Methods</span>
                             </li>
-                            <li>
+                            <li class="font-mullish flex items-center space-x-2">
+                                <i data-feather="check" class="text-greenLight"></i>
                                 <span>Industry Leading Success Rate</span>
                             </li>
-                            <li>
+                            <li class="font-mullish flex items-center space-x-2">
+                                <i data-feather="check" class="text-greenLight"></i>
                                 <span>Superior Checkout Experience</span>
                             </li>
-                            <li>
+                            <li class="font-mullish flex items-center space-x-2">
+                                <i data-feather="check" class="text-greenLight"></i>
                                 <span>Easy to Integrate</span>
                             </li>
-                            <li>
+                            <li class="font-mullish flex items-center space-x-2">
+                                <i data-feather="check" class="text-greenLight"></i>
                                 <span>Instant Settements from day 1</span>
                             </li>
-                            <li>
+                            <li class="font-mullish flex items-center space-x-2">
+                                <i data-feather="check" class="text-greenLight"></i>
                                 <span>In-depth Reporting and Insights</span>
                             </li>
                         </ul>
 
                         <!--Button and Hyperlink-->
-                        <div>
-                            <button>Sign Up Now</button>
+                        <div class="flex flex-row items-center space-x-4">
+                            <button class="text-white bg-lightBlue rounded-md font-mullish w-fit py-[14px] px-[18px] font-bold hover:bg-lightBlue500 transition-all duration-200">Sign Up Now</button>
                             <!--Hyperlink-->
-                            <div>
-                                <a href="">Know More</a>
-                                <i></i>
+                            <div class="flex items-center group cursor-pointer">
+                                <a class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200" href="">Know More</a>
+                                <i data-feather="chevron-right"
+                                class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue
+                                transition-all duration-200"></i>
                             </div>
                         </div>
 
                     </div>
 
-                    <img src="./images/payment-suite.png" alt="">
+                    <img src="./images/payment-suite.png" alt=""
+                    class="max-w-[400px] absolute right-0 bottom-0">
                 </div>
             </div>
         </section>
     </div>
+
+    <script>
+        feather.replace()
+    </script>
 </body>
 
 </html>
