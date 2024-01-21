@@ -14,6 +14,42 @@
             padding-top: 12rem;
             padding-bottom: 12rem;
         }
+
+        .move-image{
+            animation: 20s infinite linear moveCompanies;
+        }
+
+        @keyframes moveCompanies {
+            0%{
+                top:0;
+            }
+            100%{
+                top: -100%;
+            }
+        }
+
+        .cta-section{
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        @media (max-width:768px) {
+            .feature-section-2{
+                background-position: 60% 50%;
+                background-size: 700% 100%;
+            }
+            
+            .corefeaturesection{
+                background-size: 350% 100% ;
+            }
+        }
+     
+        @media (max-width:1024px) {
+            .cta-section{
+                background-size: 200% 100%;
+            }
+        }
     </style>
 </head>
 
@@ -868,6 +904,28 @@
             </div>
         </section>
 
+        <!--Join Razorpay Section -->
+        <section class="bg-[#f4f8fe] w-full relative md:pt-40 md:pb-12 md:-mt-[200px] -z-10 -mt-[5rem]" >
+            <div class="w-11/12 max-w-[1080px] mx-auto relative p flex flex-col md:flex-row items-center md:h-[530px] gap-14">
+                <!--left-->
+                <div class="flex flex-col justify-center md:max-w-[450px]">
+                    <h2 class=" font-mullish font-extrabold text-2xl text-deepBlue">Join the 50,00,000+ businesses using Razorpay</h2>
+
+                    <div class="w-6 h-1 bg-greenLight mb-6 my-4"></div>
+
+                    <p class="font-mulllish" >We make it easier for you to focus on building great products while we work on simplifying your payments. Become one of us by joining thousands of our happy users and simplify the online payment experience for your customers.</p>
+
+                    <p class="font-mulllish mt-6" >Focus on your business while we handle the complexities of payments for you.</p>
+                </div>
+
+                <!--right-->
+                <div class="w-[500px] h-[550px] relative overflow-hidden " >
+                    <div class="absolute top-0 bg-gradient-to-b from-[#f4f8ff] to-[#fff0] h-[150px] w-full z-10"></div>
+                    <img src="./images/comanies.png" alt="" class="w-[500px] move-image absolute">
+                    <div class="absolute bottom-0 bg-gradient-to-t from-[#f4f8ff] to-[#fff0] h-[150px] w-full z-10"></div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <script>
