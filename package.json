@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "start": "vite"
     "build": "npx tailwindcss -o style.css --minify"
   },
   "devDependencies": {
